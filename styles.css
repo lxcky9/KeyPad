@@ -107,6 +107,10 @@ body {
 
 .fingerprint { display: grid; place-items: center; margin-top: 18px; color: var(--accent); filter: drop-shadow(0 0 10px var(--accent-glow)); }
 
+.actions-row { display: flex; justify-content: center; margin-top: 10px; }
+.link-btn { background: transparent; border: none; color: var(--muted); cursor: pointer; font-size: 14px; text-decoration: underline; }
+.link-btn:hover { color: var(--text); }
+
 .footer { margin-top: 18px; color: var(--muted); font-size: 13px; display: flex; justify-content: center; gap: 8px; }
 .footer code { color: var(--text); background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; }
 
