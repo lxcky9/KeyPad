@@ -1,5 +1,5 @@
 (function () {
-  const CORRECT_PIN = "969990"; // Change as needed
+  const CORRECT_PIN = "696969"; // Change as needed
   const MAX_ATTEMPTS = 3;
   const LOCKOUT_MS = 30_000; // 30 seconds
 
@@ -152,5 +152,6 @@
   setMessage("");
   if (demoPinEl) demoPinEl.textContent = CORRECT_PIN;
 })();
+
 
 
