@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keypad Lock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="app-title">
+      <h1 id="app-title" class="visually-hidden">Keypad Lock</h1>
+
+      <section class="lock" aria-label="6-digit keypad lock">
+        <div class="top">
+          <div class="icon lock-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect class="lock-body" x="5" y="10" width="14" height="10" rx="2"/>
+              <path class="shackle" d="M8 10V7a4 4 0 1 1 8 0v3"/>
+            </svg>
+          </div>
+          <h2 class="title">Enter Passcode</h2>
+          <div class="display" role="status" aria-live="polite" aria-atomic="true">
+            <div class="dots" id="pin-dots" data-length="0" aria-label="PIN input">
+              <span class="dot" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+            </div>
+            <div id="message" class="message" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="keypad" role="group" aria-label="Numeric keypad">
+          <button class="key circle" data-key="1" aria-label="1">1</button>
+          <button class="key circle" data-key="2" aria-label="2">2</button>
+          <button class="key circle" data-key="3" aria-label="3">3</button>
+
+          <button class="key circle" data-key="4" aria-label="4">4</button>
+          <button class="key circle" data-key="5" aria-label="5">5</button>
+          <button class="key circle" data-key="6" aria-label="6">6</button>
+
+          <button class="key circle" data-key="7" aria-label="7">7</button>
+          <button class="key circle" data-key="8" aria-label="8">8</button>
+          <button class="key circle" data-key="9" aria-label="9">9</button>
+
+          <button class="key circle icon" data-action="delete" aria-label="Delete" title="Delete (Backspace)">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M10 5 4 12l6 7"/>
+              
+            </svg>
+          </button>
+          <button class="key circle" data-key="0" aria-label="0">0</button>
+          <button class="key circle icon" data-action="submit" aria-label="Submit" title="Submit (Enter)">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="m6 13 4 4 8-8"/>
+            </svg>
+          </button>
+        </div>
+
+        
+      </section>
+
+      <footer class="footer visually-hidden">
+        <label class="inline">
+          <span>Demo PIN:</span>
+          <code id="demo-pin">969990</code>
+        </label>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
